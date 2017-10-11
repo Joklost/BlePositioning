@@ -13,6 +13,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)AndroidBleHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BleScannerBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CalcPage.xaml.cs">
       <DependentUpon>CalcPage.xaml</DependentUpon>
       <SubType>Code</SubType>

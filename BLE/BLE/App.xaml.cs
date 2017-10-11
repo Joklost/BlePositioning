@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Rosenbjerg.DepMan;
 using Xamarin.Forms;
 
 namespace BLE
@@ -12,7 +13,7 @@ namespace BLE
         public App()
         {
             InitializeComponent();
-
+            var scanner = DependencyManager.Get<BleScannerBase>();
 #if __ANDROID__
             BleHelper = new AndroidBleHelper();
 #endif
